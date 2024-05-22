@@ -22,9 +22,8 @@ public class BitcoinResource {
     @Produces(MediaType.APPLICATION_JSON)
 
     public List<Bitcoin> listar() {
-       var a =   bitcoinService.listar();
-        System.out.println(a);
-       return a;
+       return bitcoinService.listar();
+
 
     }
 }
