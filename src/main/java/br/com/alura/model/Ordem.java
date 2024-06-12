@@ -30,6 +30,14 @@ public class Ordem {
         this.tipo = tipo;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
     public  void setData(LocalDate data){
         this.data = data;
     }
