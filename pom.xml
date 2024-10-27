@@ -70,13 +70,20 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-mysql</artifactId>
     </dependency>
+    <!--ACESSO A BASE DADOS-->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-hibernate-orm-panache</artifactId>
     </dependency>
+    <!--AUTENTICACAO E AUTORIZACAO-->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-security-jpa</artifactId>
+    </dependency>
+    <!--TESTES-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-panache-mock</artifactId>
     </dependency>
   </dependencies>
   <build>
