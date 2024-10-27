@@ -37,6 +37,21 @@ public class Ordem {
     public Long getUserId() {
         return userId;
     }
+    public Double getPreco(){
+        return this.preco;
+    }
+
+    public String getTipo(){
+        return this.tipo;
+    }
+
+    public LocalDate getData(){
+        return this.data;
+    }
+
+    public String getStatus(){
+        return this.status;
+    }
 
     public  void setData(LocalDate data){
         this.data = data;
