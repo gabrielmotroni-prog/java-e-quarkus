@@ -2,6 +2,7 @@ package br.com.alura.model;
 
 import io.quarkus.elytron.security.common.BcryptUtil;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import jakarta.json.bind.annotation.JsonbTransient;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -53,6 +54,7 @@ public class Usuario extends PanacheEntityBase {
         this.username = username;
     }
 
+    @JsonbTransient // nao serializa essa prpriedade para json
     public String getPassword() {
         return password;
     }
@@ -73,8 +75,8 @@ public class Usuario extends PanacheEntityBase {
         this.role = role;
     }
 
-    @Override
 
+    @Override
     public String toString() {
         return "Usuario{" +
                 "id=" + id +
